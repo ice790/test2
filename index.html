@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>尘白 | 个人主页</title>
+  <meta name="description" content="尘白的个人主页。江苏科技大学学生，正在学习 Java SE 与 AI Agent，记录重新出发的旅程。">
+  <meta name="author" content="尘白">
+  <meta name="theme-color" content="#0ea5e9">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="尘白 | 个人主页">
+  <meta property="og:title" content="尘白 | 个人主页">
+  <meta property="og:description" content="江苏科技大学学生，正在学习 Java SE 与 AI Agent。自认天命不凡，资质尚可，重新出发。">
+  <meta property="og:image" content="assets/rain.png">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/rain.png">
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
+</head>
+<body>
+  <div class="rain" id="rain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="主导航">
+      <a class="brand" href="#top">尘白<span class="brand-dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#journey">旅程</a></li>
+        <li><a href="#learning">学习</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="eyebrow reveal">江苏科技大学 · 学生</p>
+        <h1 class="reveal" id="hero-title">你好，我是<br><span class="gradient-text">尘白</span></h1>
+        <p class="tagline reveal">自认天命不凡，资质尚可。<br>正在把荒废的时光，一点点追回来。</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#about">认识我</a>
+          <a class="btn btn-ghost" href="#journey">看看我的旅程</a>
+        </div>
+        <ul class="hero-meta reveal" aria-label="近况">
+          <li><strong>Java SE</strong><span>学习中</span></li>
+          <li><strong>AI Agent</strong><span>探索中</span></li>
+          <li><strong>九月</strong><span>重新出发</span></li>
+        </ul>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orb orb-1" aria-hidden="true"></div>
+        <div class="orb orb-2" aria-hidden="true"></div>
+        <div class="portrait-frame">
+          <img src="assets/rain.png" alt="尘白的头像">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">关于我</p>
+          <h2 id="about-title">一个正在重新出发的人</h2>
+          <p>跌跌撞撞走过一些路，才慢慢学会认真对待时间。</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-content">
+            <p class="about-lead">我是尘白，一名江苏科技大学的大学生。自认天命不凡，资质尚可，但前两年浑浑噩噩，荒废了许多时光。</p>
+            <p>但也经历了诸如恋爱、失恋，与朋友绝交，认识了很多人，也淡交了很多人。这让我对于人生的理解更加深刻。</p>
+            <p>今年九月，我开始 Java SE 和 AI Agent 的学习。也许将来的某日，我会为自己写下的这段话感到欣慰。</p>
+          </div>
+          <p class="about-sign">—— 尘白</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">旅程</p>
+          <h2 id="journey-title">走过的路，都算数</h2>
+          <p>有过低谷，也有过告别。回头看，它们都在塑造现在的我。</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <p class="timeline-time">前两年</p>
+              <h3>浑浑噩噩的日子</h3>
+              <p>荒废了许多时光，也错过了不少本可以抓住的东西。</p>
+              <button class="text-btn" type="button" data-modal="lost">回望那段日子</button>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <p class="timeline-time">相遇与告别</p>
+              <h3>很多人来过，很多人离开</h3>
+              <p>恋爱与失恋，绝交与淡交，让我对人生有了更深的理解。</p>
+              <button class="text-btn" type="button" data-modal="people">关于聚散</button>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <p class="timeline-time">九月 · 此刻</p>
+              <h3>重新出发</h3>
+              <p>开始学习 Java SE 与 AI Agent，让每一天都有一点积累。</p>
+              <button class="text-btn" type="button" data-modal="now">此刻的开始</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="learning" aria-labelledby="learning-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">学习</p>
+          <h2 id="learning-title">正在学习的东西</h2>
+          <p>把地基打牢，再去看看更大的世界。</p>
+        </div>
+        <div class="learning-grid">
+          <article class="learn-card reveal">
+            <div class="learn-icon" aria-hidden="true">J</div>
+            <h3>Java SE</h3>
+            <p>从基础语法到面向对象，把荒废的地基重新打牢。</p>
+            <ul class="tag-list">
+              <li>语法基础</li>
+              <li>面向对象</li>
+              <li>集合与 IO</li>
+            </ul>
+            <button class="text-btn" type="button" data-modal="java">学习计划</button>
+          </article>
+          <article class="learn-card reveal">
+            <div class="learn-icon" aria-hidden="true">AI</div>
+            <h3>AI Agent</h3>
+            <p>了解智能体如何思考、调用工具，并真正解决实际问题。</p>
+            <ul class="tag-list">
+              <li>提示词</li>
+              <li>工具调用</li>
+              <li>工作流</li>
+            </ul>
+            <button class="text-btn" type="button" data-modal="agent">探索方向</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="eyebrow">联系</p>
+          <h2 id="contact-title">一起走得更远</h2>
+          <p>如果你也在学习 Java 或 AI Agent，欢迎来 GitHub 看看，互相交流。</p>
+          <div class="contact-actions">
+            <a class="btn btn-light" href="https://github.com/ice790" target="_blank" rel="noopener noreferrer">访问我的 GitHub</a>
+            <button class="btn btn-outline-light" type="button" data-modal="letter">写给自己</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> 尘白 · 自认天命不凡，资质尚可</p>
+      <a class="back-top" href="#top">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog">
+      <button class="modal-close" type="button" data-close aria-label="关闭弹窗">×</button>
+      <p class="modal-tag" id="modalTag"></p>
+      <h2 id="modalTitle"></h2>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

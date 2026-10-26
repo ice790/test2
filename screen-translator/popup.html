@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>即译</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="brand">
+      <img class="logo" src="icons/icon48.png" alt="">
+      <div class="brand-text">
+        <h1>即译</h1>
+        <p>屏幕实时翻译 · 简体中文</p>
+      </div>
+    </div>
+    <label class="switch" title="开启或关闭实时翻译">
+      <input id="enabled" type="checkbox" aria-label="开启或关闭实时翻译">
+      <span class="switch-track"><span class="switch-thumb"></span></span>
+    </label>
+  </header>
+
+  <main class="panel">
+    <section class="status-card" aria-live="polite">
+      <span class="status-dot" id="statusDot" aria-hidden="true"></span>
+      <div class="status-copy">
+        <p class="status-title" id="statusTitle">读取状态中…</p>
+        <p class="status-detail" id="statusDetail">请稍候</p>
+      </div>
+    </section>
+
+    <div class="fields">
+      <label class="field">
+        <span>识别语言</span>
+        <select id="sourceLang">
+          <option value="en">英语</option>
+          <option value="ja">日语</option>
+          <option value="ko">韩语</option>
+          <option value="ru">俄语</option>
+          <option value="zh-Hant">繁体中文</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>刷新间隔</span>
+        <select id="interval">
+          <option value="1500">极速 · 1.5 秒</option>
+          <option value="2500">标准 · 2.5 秒</option>
+          <option value="4000">省电 · 4 秒</option>
+          <option value="6000">慢速 · 6 秒</option>
+        </select>
+      </label>
+    </div>
+
+    <button class="refresh-btn" id="refresh" type="button">立即刷新当前页面</button>
+
+    <p class="notice" id="notice" hidden></p>
+
+    <p class="hint">
+      开启后自动识别当前标签页文字，并在原位置覆盖简体中文译文。截图仅在本机识别，识别出的文字会发送给免费翻译接口。首次使用会加载本地识别模型，耗时稍长。
+    </p>
+  </main>
+
+  <footer class="footer">
+    <span>Alt+Shift+T 快速开关</span>
+    <span>免费接口 · 无需配置</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
